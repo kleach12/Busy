@@ -8,15 +8,21 @@ export default function Home() {
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
   });
 
- 
-  if (!isLoaded) return <h2> Loading...</h2>
-  
+  if (!isLoaded) return <h2> Loading...</h2>;
+
   return (
     <div className="flex">
       <GoogleMap
         center={center}
-        zoom={15}
+        zoom={14}
         mapContainerStyle={{ width: "100%", height: "100%" }}
+        options={{
+          scrollwheel: false,
+          gestureHandling: "none",
+          zoomControl: false,
+          streetViewControl: false,
+          mapTypeControl: false
+        }}
       ></GoogleMap>
     </div>
   );

@@ -6,3 +6,12 @@
   height: 100vh;
   width: 100vw;
 }
+
+#top-layer{
+  z-index: 10;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

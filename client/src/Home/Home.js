@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <div className="flex">
       <LoggedOutHomeMap/>
+      <h2 id ="top-layer"> Busy </h2>
     </div>
   );
 }

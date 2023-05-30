@@ -1,0 +1,22 @@
+#banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #ffffff;
+  justify-self: center;
+}
+
+#app-name{
+  font-size: 150px;
+  margin: 0;
+}
+
+.top-layer{
+  z-index: 10;
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
